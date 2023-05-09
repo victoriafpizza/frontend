@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+
+    <h1>Fromularios</h1>
+
+    <form action=" cadastrar" method="get">
+        <fieldset>
+        <legend>dados pessoais</legend>
+        <label for="c-nome">nome</label>
+        <input type="text" name="nome" id="c-nome"><br>
+        </fieldset>
+
+        <fieldset>
+        <legend>tamanho</legend>
+        <input type="radio" name="tamanho" id="c-peq" value="P">
+        <label for="c-peq">pequeno</label>
+        <input type="radio" name="tamanho" id="c-med" value="M">
+        <label for="c-med">medio</label>
+        <input type="radio" name="tamanho" id="c-gra" value="G">
+        <label for="c-gra">grande</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Cores</legend>
+        <input type="checkbox" name="cor" id="c-azul" value="azul">
+        <label for="c-azul">azul</label>
+        <input type="checkbox" name="cor" id="c-verde" value="verde">
+        <label for="c-verde">verde</label>
+        <input type="checkbox" name="cor" id="c-vermelho" value="vermelho">
+        <label for="c-vermelho">vermelho</label>
+    </fieldset>
+
+    <input type="submit" value="cadastrar">
+   
+
+    </form>
+    
+</body>
+</html>
