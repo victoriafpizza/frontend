@@ -37,11 +37,34 @@
         <label for="c-vermelho">vermelho</label>
     </fieldset>
 
+    <fieldset>
+        <legend>observação</legend>
+        <textarea name="obs" id="c-obs" cols="30" rows="10"></textarea> 
+    </fieldset>
+
     <input type="submit" value="cadastrar">
     <input type="reset" value="limpar">
-    <input type="button" value="calcular"
-   
+    <input type="button" value="calcular">
 
+    <fieldset>
+        <legend>observação</legend>
+        <textarea name="obs" id="c-obs" cols="30" rows="10"></textarea>
+        <label for="c-uf"> estado </label>
+        <select name="uf" id="c-ufc">
+        <optgroup label="sudeste">
+                <option value="sp">sao paulo</option>
+                <option value="rj">minas gerais</option>
+                <option value="mg">rio de janeiro</option>
+                <option value="es">espirito santo</option>
+        </optgroup>
+
+        <optgroup label="sul">
+            <option value="rs">rio grande do sul</option>
+            <option value="sc">santa catarina</option>
+            <option value="pr">parana</option>
+        </optgroup>
+        </select>
+    </fieldset>
     </form>
     
 </body>
