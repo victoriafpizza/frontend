@@ -1,0 +1,108 @@
+Basciamente o que faz a internet funcionar são duas coisas:
+
+hardware- roteadores, servidore, torres de telefonia, celular, satelites, radio, smmartphones, e outros dispositvos,
+todos elscriam as redes das redes, ou seja a internet.
+
+Protocolos- conjunto de regras que as maquinas seguem para completar tarefas e se comunicarem. 
+Para acessar protocolos, é necessario um dispositivo, um software compativle com a internet e uma conexão de rede.
+
+First Steps 
+
+Nadecada de 80, com a cehgada da Web o objetivo era somente a publicação e distribuição de textos cientificos
+e academicos, usava-se como padrão
+
+- Uniform Resource Locator (url)
+-Hyper Text Markup Language (html)
+-Hyper Text Transfer Protocol (http)
+
+Na limitção do HTML 
+
+- a web invade i mundo dos ndegocios (gilmore girls Christopher)
+- centens de sites publicados (alta produção)
+- péssima aderencia ao padrões (baixa qualidade)
+
+Baixa ou nenhuma aderencia aos Browsers 
+
+-guerra dos Browsers;
+-padroes proprietarios
+-bagunça generallizada
+
+E para ajudar a alta produtividade e a bagunça 
+
+-Editores HTML "WYSIWYG"
+
+Uma bagunça total 
+
+-Emaranhado de TAGs
+-Tabelas, formatações, textos, scripts e etc. Tudo junto e misturado. 
+-O codigo era incompreensivel
+-Péssima organização
+-Falta ou nenhum padrão estabelecido
+-Dificuldade para manutenção e desenvolvimento 
+
+Web Standards
+
+-Web Standards é um conjunto de normas, diretrizes, recomendações, notas, artigos, tutoriais, e afins de 
+carater tecnico, produzidos pela W3C
+
+-É destinado a orientar fabricantes, desenvolvedores e projetistas para o uso de praticas que possibilitam 
+a criação de uma web acessivel a todos 
+
+W3C WORLD WIDE WEB CONSORTIUM 
+
+-Consorcio de empresas que tem o objetivo de desenvolver padrões, especificações tecnicas e orientações
+que permitam o crescimento a longo prazo da web. Conta com mais de 300 organizações filiadas, possui equipes em 
+tempo integral, aceita participação do publico. É administrada atraves de um contrato comum entre:
+MIT(EUA), ECRIM(EUROPA)- KEIO UNIVERSITY (JAPAO) - BEIHANG UNIVERSITY (CHINA)
+
+- tinham que disseminar a cultura de adiçao de padrões para a web. Recomendar padõres tecnicos
+para o desenvolvimento web 
+
+Standards
+
+-O documento O novo conceito indica que devemos dividir a Web em 3 camadas
+
+JavaScript - Comportamento 
+CSS - Apresentação
+HTML - estrutura de dados (conteudo)
+
+- camadas independentes, porem inter-relacionadas,ou seja, uma camada completara a outra
+
+Sites com padrões Vs Sites sem padrões
+
+sites sem padrões
+-extensão da midia impressa
+-layout baseado em tabelas 
+-conteudo, apresentação e comportamento "misturados"
+-codigo incompreensivel
+
+Sites com padrões
+-acessivel de qualquer dispositivo
+-layout baseado em CSS
+-separação entre conteudo, apresentação e comportamento 
+-codigo acessivel
+
+- hoje os codigos são identados e com padrões
+
+Semantica
+
+- quando a marcação é utilizada para o que ela realmente foi criada, estamos construindo um codigo semantico
+
+Porque uar webStandards
+
+reaproveitamento do codigo -> Ha em programação muita repetição de codigo significa que algo não esta sendo feita 
+da melhor maniera possivel. uma construção modular, com CSS e JavaScript externos, permite que muitos codigos
+sejam reaproveitados.
+
+Organização da equipe -> a separação das camdas facilita a divisão de tarefas. Mais de uma pessoa trabalhando
+em paralelo no mesmo projeto agiliza o processo, desde que a ação impacte negativamente o que foi desenvolvido
+pelos outros. 
+
+Limpeza do código -> Um codigo limpo facilita a leitura e manutenção. Aleém disso um HTML semantico e limpo
+é bom pra os sites de busca, pois os robos interpretação de uma forma correta e lhe trarão bom posicionamento
+
+estabilidade -> permite que documentos existentes atualmente permaneceram passiveis de utilização muitos anos
+no futuro, em ambiente ainda a serem criados 
+
+otimização pra SEO -> documentos semantcios são maisa cessiveis e facilitam a indexação por robos de busca como GOOGLE
+
