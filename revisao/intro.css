@@ -1,0 +1,84 @@
+/* Não fazer */
+
+/* <p style="background-color: #900;"> Texto do Paragrafo </p>
+
+<STYLE>
+    p{
+        background-color: #900;
+    }
+</STYLE> */
+
+p {color: #F00; font-size: 20px;}
+
+/* bloco de instruççoes em um conjunto de regras  */
+
+/* repeat */
+
+body{background-image: url('img/JavaScript-logo.png');
+        background-repeat: no-repeat;}
+
+/* rolamento de pagina */
+
+body{background-image:url("img/JavaScript-logo");
+        background-repeat: no-repeat;
+        background-attachment: fixed;}
+        
+
+/* alinhamento */
+
+body{background-image: url("img/JavaScript-logo.png");
+        background-repeat: no-repeat;
+        background-position: center center;}
+
+    
+/* definição em porcentagem */
+
+body{background-image: url("img/JavaScript-logo.png");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;}
+
+/* cores css */
+
+h1{font-family: arial, calibri;}
+
+/* para colocar o fonts-google devemos colocar assim */
+
+@import url('https://fonts.googleapis.com/css?family=Lobster'); 
+h2{font-family: 'Lobster', cursive;}
+
+/* tamanho da fonte */
+
+p{font-size: 24px;}
+
+/* Font-weight - normal*/
+
+p{font-weight: normal;}
+
+/* Bold */
+
+p{font-weight: bold;}
+
+/* normal */
+
+p{font-style: normal;}
+
+/* italico */
+
+p{font-style: italic;}
+
+/* obliquo */
+
+p{font-style: oblique;}
+
+/* small caps, define um pouco abaixo da caixa alta */
+
+p{font-variant: small-caps;}
+
+/* TEXTOS */
+/* lef */
+
+p{text-align: left;}
+
+/* right */
+
+P{text-align: right;}

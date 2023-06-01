@@ -106,3 +106,165 @@ no futuro, em ambiente ainda a serem criados
 
 otimização pra SEO -> documentos semantcios são maisa cessiveis e facilitam a indexação por robos de busca como GOOGLE
 
+HTML - Hyper Text Markup Language
+
+- É uma linguagem de marcação utilizada para formatações de textos, inserir imagens e ligações de hipertexto
+-Não é possivel programar em HTML pois é apenas uma liguagem de marcação
+- Os Browsers são responsaveis por identificar as marcações em HTML e apresentar os documntos confrome o que foi
+especificado por essas marcações
+
+Todo documento HTML apresenta elementos entre parenteses angulares (< e >) - esses elementos são as etiquestas de HTML,
+elas definem onde começa e termina um determinado conteudo da pagina. A maioria das tags tem abertura e fechamento
+<tag> </tag>
+
+- Alguns elementos são chamados "vazios", pois não marcam uma região de texto, apenas inserem algo no doc <tag>
+- Todos os elementos podem ter atributos:
+
+<tag atributo1="valor1" atributo2="valor2"> ... </tag>
+
+Os atributos podem ser obrigatorios ou opcionais.
+-Usar sempre as minusculas para escrever as tags 
+
+<!DOCTYPE html> 
+o doctype deve ser a primeira linha de codigo do documento antes da tag HTML. Ele indica para o navegador e para 
+outros meios qual a especificações de codigo utilizar. Em versões anteriores, era necessário referenciar o DTD 
+diretamente no codigo do Doctype. Com o HTML5, a referencia por qual DTD utilizar é responsabidade do Browser
+
+O doctypee não é uma tag do HTML, mas uma instrução para que o Browser tenha infromações sobre qual versão de 
+código a marcação foi escrita. HTML
+
+< html lang = 'PT-BR' > 
+
+- O codigo html é uma serie de elementos em arvores onde alguns elementos são filhos de outros e assim por diante.
+O elemento principal dessa grande arvore é sempre a tag HTML
+-O atributo LANG é necessario para que os user-agents saibam qual a linguagem principal do documento
+
+<head> ... </head>
+
+- a tag head é onde fica toda uma parte muito importante de sua apgina. No head ficam os metadados
+
+<meta charset="UTF-8">
+
+-Para exibir uma pagina HTML corretamente, um navegador da web deve conhecer o conjunto de caracters usaddos na pagina.
+Isso é especificado na tag <meta> com o atributo charset 
+
+<meta name ="viewport" content="widht=device-width, initial-scale=1">
+
+o viewport é a area visivel do usuario de uma pagina da web, sendo que ela varia de acordo com o dispositivo.
+Ela vai ajudar para desenvolver conteudo responsivo
+
+<meta http-equiv="X-UA-Compatible" content="IE=egde">
+
+O http-equiv vai fazer qualquer navegador da Microsoft anterior ao Edge se comportar como ele na hora de 
+renderizar a pagina. 
+
+<title> </title>
+
+Define o titulo da pagina, o conteudo que sera exibido nas abas dos navegadores. 
+
+<body> </body>
+
+É aqui que todo conteudo de sua pagina será inserido. Entenda como conteudo: textos, imagens,links, tabelas,
+formularios, tudo aquilo que e exibido ao usuário 
+
+<h1> ate <h6> 
+são os cabeçalhos para os docuemntos HTML. Devemos lembrar que <h1> é o maior nivel de cabeçalho de <h6> o menor,
+mas isso pode mudar de acordo com a formatação CSS que pode ser aplicada na pagina 
+
+<p> 
+A tag <p> permite a criação de um paragrafo qualquer. Podemos usar CSS para fazera estilização desse paragrafos
+formatando entre outras coisas suas margens. 
+
+<br> 
+
+Quando queremos mudar de linha, usamos o elemento <br> . Isso só é necessário quando é necessárioa uma quebra
+de linha em determinado ponto, ois os Browsers ja quebraram as linhas automaticamente para apresentar os textos. 
+Com sucessivos <br>, é possivel inserir diversas linhas em brancos no documentos, uma pratica que precisa ser evitada 
+
+Listas Ordenadas
+
+A tag <ol>> define uma lista ordenada com numeros. Use a tag ol junto com a tag li para criar 
+listas Ordenadas
+
+<ol>
+    <li>
+<ol>
+
+Listas Não Ordenadas
+
+A tag ul define uma lista não ordenada (com marcadores). Use a tag ul junto com a tag <li> para criar 
+listas não ordenadas.
+
+<ul> 
+    <li>
+IMAGENS 
+
+Imagens sãi inseridas pela tag img possui o atributo src que indica o local onde a imagem estã armazenada
+e o atributo alt que ajudara na usabilidade da pagina com pessoas cm algum tipo de deficiencia visual
+
+<img src="local da imagem" alt="atributo">
+
+Se a imagem não for carregada, o navegador exibira o valor inserido d atributo alt
+
+
+LINKS 
+
+Com HTML é possivel fazermos ligações de uma região de texto (ou imagem) a um outro documento, para isso
+utiliamos a tag <a> da seguinte forma:
+
+<a href="arq_destino">ancora</a>
+
+onde:
+
+arq_destino: é o endereço do documento do deseino 
+ancora: é o texto ou imagem que servira de ligação hipertexto do documento sendo apresentado para o documento
+de destinado
+
+texto de link: um texto de lin bem claro pode ajudar os visitantes a encontrar o que querem e dar uma impressão
+mais positiva do site. Para escrever um bom texto de link, oense em palavras que as pessoas podem utilizar na pesquisa
+de destino do links
+
+links para outros sites: quando criamos um link para um site diferente do nosso, o valor do atributo href, sera  
+o endereço web completo para o site , o que é conhecido como URL ABSOLUTO
+
+EX: criar um link para o site da FIAP
+
+<a href="http://www.fiap.com.br">FIAP</a>
+
+LINKS PARA PAGINAS NO MESMO SITE 
+
+Quando criamos um link para outras paginas dentro do mesmo site, não é necessário especificar o nome do 
+dominio, podemos usar um atalho conhecido como URL RELATIVO
+
+Se todas as paginas estiverem na mesma pasta, então o valor do atributo href é apenas o nome da pagina html 
+desejada
+
+<a href="index.htmel">home</a>
+
+Se as paginas estiverem em uma pasta diferente, então deveremos colocar o nome correspondente da pasta no atributo 
+href.
+
+<a href="cursos/javascript.html">JavaScript</a>
+
+ABRINDO LINKS EM ABAS DIFERENTES 
+
+Se vc quer que um link seja aberto em uma nova janela ou aba, utilize o atributo target na tag de 
+abertura com o valor "_blank"
+
+<a href="http://www.fiap.com.br" target="_blank">FIAP</a>
+
+LINK PARA PARTES DA PAGINA 
+
+No topo de uma pagina longa, talvez voce queira adicionar uma lista dos conteudos para as seções correspondentes,
+ou então vc queira adicionar um link na parte inferior da pagina para retornar ao topo. Para isso vc deve:
+
+I - Identificar os pontos de destino da pagina, usando o atributo id. 
+
+        <h1 id="titulo"> Titulo da Pagina </h1>
+
+II - Use a tag <a>, seguindo do elemento href, que deve começar com o simbolo #, e o atributo id 
+
+        <a href="#titulo> Titulo da Pagina </a>
+
+
+

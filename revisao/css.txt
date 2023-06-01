@@ -1,0 +1,204 @@
+CSS
+
+-É uma linguagem de estilos utilizada para definir a apresentação de documentos escritos em HTML 
+-Linguagem criada pelo W3C para definir etilos em paginas web. Possibilita que determinadas 
+propriedades sejam aplicadas ao mesmo tempo a todoso os elementos de uma pagina ou site esteam marcados com 
+uma tag especifica. Facilitam a formatação e manutenção de paginas web. 
+
+-Foi criado no final de 1996, é um padrão definido pelo W3C e um dos principais conceitos relacionados 
+aos Web Standards. A linguagem HTML estrutura um documento através de blocos de informação. A CSS controla 
+a aparencia e o layout do documento. É uma solução eficiente para administração de sites com alto 
+volume de paginas. 
+
+DECLARAÇÃO
+
+CSS IL (Inline) - NÃO USAR
+
+As regras de formatação são inseridas diretamente na tag e se aplicam apenas ao elemento marcado. 
+
+CSS Interno - USAR COM MODERAÇÃO
+
+As regras de formatação são inseridas na seção <head> da pagina e se aplicam ao documento inteiro
+
+CSS Externo - USAR A VONTADE
+
+As regras de formatação são inseridas em um documento sperado do HTML e podem ser usadas por varias paginas 
+
+
+PRECEDENCIA 
+
+Pode-se usar um dos tres, ou até mesmo os tres, tipos de declaração CSS no mesmo documetno, mas para Isso
+temos de tomar mais cuidado com a precedencia. Por isso, guardar a seguinte regra:
+
+            inline > interno > externo 
+
+DECLARAÇÃO INLINE 
+
+Com esse tipo de declaração voce mistura a formatação de um elemento com o seu respectivo conteudo. Caso voce 
+queira que a mesma regra seja usada por outro elemento, tera de refazer a mesma declaração no elemento desejado.
+É terrivel dar manutenção nesse tipo de codigo. - PESSIMA PRATICA
+
+DECLARAÇÃO INTERNA 
+
+Declaração feita na seção <head> da pagina. Todos os elementos da pagina que forem delcarados na regra serão 
+formatados. A regra é aplicada apenas naquela pagina que contem a respectiva formatação 
+
+DECLARAÇÃO EXTERNA - o q deve ser usado
+
+A linha acima deve ser inserida na seção <head> de suas paginas, sua função é indicar onde está o arquivo que contem 
+as regras CSS que devem ser usadas na estilização dos elementos da pagina. Uma mesma regra CSS dentro de um arquivo
+externo, pode formmatr simultaneamente quantas paginas o desenvolvedor quiser. 
+
+EFEITO CASCATA 
+
+O efeito cascata define qual regra sera aplicada quando há mais de um estilo especificado para o mesmo elemento HTML.
+Neste caso, ele vai seguir o padrão abaixo
+
+1 - Estilo padrão do navegador
+2 - Folha do Estilo Externa (referenciada e/ou importada)
+3 - Folja de estilo Interna (definida na area dde cabeçalho do documento)
+4 - Folha de Estilo Inline (dentro de um elemento HTML)
+
+Uma regra CSS é uma declaração com sintaxe propria que indica como sera o estilo de um ou mais elementos HTML. Um 
+conjunto de regras CSS formam uma Folha de Estilos. É composta por: um seletor, uma propriedade e um valor 
+
+Existem varios tipos de seletores CSS, os padrões são os seletores para as tags, ids e classes. 
+
+Seletor para TAG: O seletor de tag é o mais simples de todos, basta informas o nome da tag, neste caso, todas as tags <p>
+existentes no documento receberão a formatação indicada - é o "p"
+
+Seletores para ID: O seletor para id é mais especificos do que o de tags, formata soemnte a tag que possui 
+o id especificcado, para indicar que seletor será para um id basta anteceder o nome do id com o caractere hash "#"
+
+Seletor para CLASS: Este seletor formata todos os elementos que usam a classe indicada, desta maniera podemos ter 
+varias tags <p> por exemplo, somente receberão a formatação aquela que tiverem o atributo class co o ome da classe 
+configurada, para identar este seletor, basta usar um ponto . antes do nome da classe
+
+correspondente
+
+Temos varias cores, mas as principasi são: 
+
+-cores Hexadecimais
+-Cores RGB
+-Nomes predefinidos entre navegadores 
+
+Cores Hexadecimais: uma cor hexadecimal é especificad com: #RRGGBB, onde os inteiros hexadecimais RR (vermelho)
+GG (verde) e BB (azul) especificam os componentes da cor. Todos os valores devem estar entre 00 e FF
+
+Por ex: o valor #0000ff é renferizado como azul, pqo componente azul é definido como seuvalor mais alto (ff)
+e os outros são definidos como (00)
+
+.texto { color: #0000ff;}
+
+Cores RGB 
+
+Um valor de cor RGB é especificado com uma função rbg () que possui a seguinte sintaxe:
+
+    rgb (red,green,blue)
+
+Cada parametro (Vermelho, Verde e Azul) vai definir uma intensidad da cor, pode ser um numero inteiro entre 0 ou 225
+ou um valor percentual (de 0% a 100%)
+
+    .texto { color: rgb(65,130,90);}
+
+Cores com Alfa 
+
+Os valores com RGB E HEXADECMAL podem receber um quarto valor que define a opaciade da cor, chamamos ela de alfa. 
+Podemos definir a opacidade assim:
+
+RGB :
+    rgba (red,green,blue,alfa) <= o numero alfa é um numero entre 0.0 (totalmente transparene) e 1.0 (totalmente opaco)
+
+HEXADECIMAL:
+
+    #redgreenbluealfa <- a opacidade é configurad pelo mesmo range de numero que as demias cores. 
+
+Nomes das cores: todos os navegadores modernos aceitam um pouco masi de 140 nomes de cores 
+
+
+PREENCHIMENTOS DE FUNDOS 
+
+A propriedade background permite preenchimetnos o fundo da caixa dos elementos de diversas formatados
+
+background-color: é a propriedade que define a for de funco de um elemento 
+
+    p{backgorung-color: #aaaaff;}
+
+background-image: é a priopriedade que define uma imagem como fundo. 
+
+    body{backgorund-image: url ('img/JavaScript-logo.png');}
+
+A propriedade background-repeat controla a repetição de uma imagem de fundo. Podemos confugurar esta propriedade
+de 4 formas:
+
+background-repeat: repeat-x: imagem repete na horizontal
+background-repeat: repeat-y: a imagem se repete na vertical
+background-repeat: repeat : a imagem repete em ambas as posições
+background-repeat: no-repeat: a imagem não se repete
+
+background-attachment : fixed : a imagem de fundo permanece na mesma posição da pagina 
+backgorund-attachment : scroll : a imagem de fundo move-ser com o conteudo quando o usuário rola a pagina
+
+Quando uma imagem não é repetida a propriedade background-position especifica a posição da imagem na janela. Podemos 
+usar os valores 
+
+Top,Botton, e Center: alinhamento vertical
+Right, Left e Center: alinhamento horizontal
+
+Tambem podemos usar a percentagem para definir estes valores
+
+FONTES
+
+A propriedade dont-Family permite especificaras fonte que deve ser usada para qualqer texto dentro dos elementors
+qual a regra CSS se aplica. Podemos especififcar uma lista de fontes separadas por virgulas de modo que, 
+se o usuario não tiver a primeira fonte instalada, o navegadir pode tentqqar usar a proxxima da lista 
+
+É uma boa pratica terminas a lista com o tipo da fonte principal, pois se nenhuma delas for encontrada, o navegador
+busca uma fonte do mesmo tipo
+
+Temos 3 tipos de fonte: 
+
+SERIF: Detalhes adicionais nas extremiadades
+SANS-SERIF: ela tem as extremidades retas, sem Detalhes
+MONOSPACE: ela tem todas a letras com o mesmso espaçamento 
+
+FONTS-GOOGLE: Podemos tambem usar uma fonte personalizada em nossas paginas sem te que baixar e copiatr em nosso projeto
+Para isso podemos utilizar as fontes queo google disponibiliza gratuitamente. 
+
+* mas sem aconexãocom a internet as fontes não vão funcionar 
+
+A propriedade font-size permite especificar o tamanho da fonte. Podemos utilizar agumas unidades de medida para isso
+
+PIXELS: referente aos pontos da tela, ela permite uma precisão maior para controlar o tamannho das fontes: 80px
+PERCENTAGENS:  altera o tamanho da fonte usando a % relativa ao seu tamanho padrão: de txt é 16px então 75% de 16px
+EMS: Um em é equivalente ao tamanho do elemento pai. O padrão das paginas é 16px. Ex : 1.5em
+
+
+FONT-WEIGHT
+
+A propriedade font-weight deixa em negrito. Temos duas variaveis desta prorpriedade:
+
+Normal: Isso faz com que o texto apareça em um peso Normal
+Bold: isso faz com que o texto apareça em negrito
+
+Para criar um texto em italico usamos a propriedade font-style. Temos 3 valores possiveis para essa propriedade:
+
+normal: isso faz com que o texto apareç em um estilo normal
+italic: aparece em italico
+oblique: aparece em obliquo
+
+* se o navegador não localizar a opção italica da fonte, o oblique faz com que ele incline a fonte original
+
+
+textos
+
+A propriedade text-align permite controlar o alinhamento do texto. A propriedade pode receber um dos 4 valores
+
+left: isso indica que o texto ira ser alinhado a esquerda
+right: isso indica que o texto sera alinhado a direita.
+
+
+
+
+
+
