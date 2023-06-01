@@ -1,0 +1,67 @@
+/* flex container com os flex-itens filhos */
+
+.container{
+    display: flex;
+}
+
+/* aqui os itens ficam em linha */
+/* felx-direction: row; */
+
+/* os itens ficam em kinha reversa */
+/* flex-direction:row-reverse; */
+
+/* valor padrão, não permite a quebra de linha */
+/* flex-wrap: nowrap;  */
+
+/* quebra a linha assim que um dos flex itens não puder mais ser compactado   */
+/* flex-wrap: wrap; */
+
+.item{
+    order:2;
+}
+
+/* o valor numerico atribuido a essa propriedade define a ordem do item. Por ex o valor 2 faz com que o irem seja
+o segundo item ao longo do eixo principal, enquanto o valor-1 faz com que ele apareça antes do primeiro */
+
+.item{
+    flex-grow:1;
+}
+
+.item3{
+    flex-shrink: 0;
+}
+
+.itens{
+    flex-grow: 1;
+}
+
+.item1{
+    flex-basis: 150px;
+}
+
+/* o valor atribuido a essa propriedade pode ser em percentual, em pixels,ou a palavra auto, que é o valor padrão 
+ (considera as dimensões do item - width e height*/
+
+.item4{
+    flex: 1 1 200px;
+    align-self: center;
+    align-self: flex-end;
+}
+
+/* aceita todos os valores do align items + auto (padrão) que respeita o comportamento definido no container por
+meio do align itens */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

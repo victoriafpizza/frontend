@@ -1,0 +1,55 @@
+Em todas as paginas da Web existem divisões basicas referentes aos tipos de conteudo que são colocados em cada parte 
+do layout como cabeçalho, rodape ou menu de navegação 
+
+Na versão anterior do HTML nãohaviam tags com uma semntica apropriada para cada uma dessas divisões. Dessa forma, os
+desenvolvedores acabavam usando a tag <div> para todas as situações, e criando seus proprios padrões de nomeclaturas
+através dos atributos id ou class
+
+No HTML foram criada diversas tags semanticas para indicar os user-agents quais conteudo estão sendo inseriods em
+cada uma das divisões da pagina, organizando e padronizando o desenvolvimento 
+
+Header - é utiliado para repesentar o cabeçalho de um documento ou seção delcarado no HTML. Nele podemos inserir
+elementos de h1 a h6, alem de elementos para representar imagens, paragrafos ou mesmo listas de navegação
+
+Section - representa uma seção dentro de um documento e geralmente contem um tiutlo, o qual é definido po meio de
+um dos elementos entre h1 e h6 . Podemos utilizar o section, po ex, para descrever as seções ou topicos de um doc
+
+Article - usado quando precisamos declarar um conteudo que não precisa ou outro para fazer sentido em um documento 
+HTML, por exemplo, um artigo em um blog. É recomendado identificar cada article com um titulo
+
+Nav - é utilizado quando precisamos representar um agrupamento de links de navegação, que por sua vez são criados 
+com os elementos <ul> <li> <a> 
+
+Aside - é utilizado quando precisamos crirar um conteudo de apoio ou adicional ao conteudo principal. Por ex, 
+ao falar de HTML semantico,podemos indicar ao leitos outros conteudos sobre a linguagem HTML como sugestão de leitura
+complementar ou colocar as propagandas de patrocinadores do site 
+
+Main - especifica o conteudo principal, de maior relevancia dentro da nossa pagina. Para ser bem construida, uma 
+pagina deve apresentarapenas um conteudo principal
+
+Footer - representa o rodape de um doc ou parte dele. Normalmente é utilizado para descrever informações de autoria,
+como nomee contato do autor da criação do conteudo 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

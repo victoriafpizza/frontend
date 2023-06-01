@@ -1,0 +1,135 @@
+Flexbox 
+
+É um conjunto de porpriedadde do CSS 3 que veio para facilitar no alinhamento dinaico e progressivo de nossas 
+paginas para os mais diversos tipos de tela. Elas organizam itens dentro de um elemento pai "container"
+
+O primeiro passo para utilizar o Flexbox é definir a propriedade display do container com o valor flex. Isso é 
+necessário para que as demaias propriedades apresentem o resultado esperado
+
+Display - define o elemento como um flexcontainer, tornando os seus filhos flex-itens
+
+Flex- direction 
+
+Define a direção dos flex itens. Por padrão eçe é row (linha), por isso quando o display: flex, é adicionado, os
+elementos ficma em linha, um do lado do outro 
+
+A mudança de row para column geralmente acontece quando estamos definindo os estilos em media queries para o mobille.
+Assim vc garante que o conteudo seja apresentado em coluna unica 
+
+Flex-wrap 
+
+Define se os itens devem querbar ou não a linha. Por padrão eles não quebram linha, isso faz com que os flex itens
+sejam compactados além do limite do conteúdo.
+
+Essa geralmente é uma propriedade que é quase sempre definida como flex-wrap: pois assim quando um dos flex-itens
+atinge o limite do conteudo, o ultimo item passa para a coluna debaixo e assim por diante 
+
+flex-wrap: wrap-reverse;
+
+Quebra a linha assim que um dos flex itens não pudermais ser compactado. A quebra é na direção contraria, ou seja,
+para a linha acima 
+
+Justify Content 
+
+A linha dos itens felx no container de acordo com a direção. A propriedade só funciona se os itens atuais não 
+ocuparem todo o container. Isso significa que ao definir flex: 1; ou algo similar nos itens, a propriedade não tera 
+mais função 
+
+Excelente propriedade para ser usada em casos que voce deseja alinhas um tem na ponta esquerda e outro na direita,
+como em um simples header com marca e navegação
+
+justify-content: flex-start;
+alinha os itens ao inicio do container
+
+justify-content: felx-end; 
+alinha os itens ao final do container
+
+justify-content: center;
+alinha os itens ao centro do container 
+
+justify-content: space-between;
+cria  um espaçamento igual entre os elementos. Mantendo o primeiro grudado no inicio e o ultimo no final
+
+justify-content: space-around;
+cria um espaçamento entre os elementos. Os espaçamentos do meio são duas vezes maiores que o inicial e final
+
+Align - Itens 
+
+O align-items alinha os flex itens de acordo com o eixo do container. O alinhamento é diferente para quando os
+itens estão em colunas ou linhas. Essa propriedade permite p tão sonhado alimanento vertical no eixo centralizado
+
+align-items: strech;
+valor padrão, ele que faz com que os flex itens cresçam igualmente 
+
+align-items: flex-start;
+alinha os itens ao inicio
+
+align-items: flex-end; 
+alinha os itens no final
+
+align-items: center; 
+alinha os itens ao centro
+
+align-items: baseline;
+alinha os itens de acordo com a linha base da tipografia
+
+Align Content
+Alinha as linhas do container em relação ao eixo vertical. A propriedade só funciona se existir mais de uma
+linha de flex-wrap precisa ser wrap. 
+
+Alem disso, o efeito dela apenas sera visualizasdo csao o container seja maior que a soma das linhas dos itens.
+Isso sigifica que se vc não definir height para o container, a propriedade não inlfuencua no layout. 
+
+align-content: stretch;
+valor padrão, ele que faz com que os felx itens cresçam igualmente na vertical
+
+align-content: flex-start; 
+alinha todas as linhas de itens ao inicio 
+
+align-content: flex-end;
+alinha todas as linhas de itens ao final 
+
+align content: center;
+alinha todas as linhas de itens ao centro
+
+align-content: space-between;
+cria um espaçamento igual enre as linhas. Mantendo a primeira grudada no topo e a ultima no bottom
+
+align-content: space around;
+cria um espaçamento enre as linhas. Os espaçamentos do meio são duas vezes maiores que o top e o bottom 
+
+CONFIGURANDO ITENS EM INDIVIDUAL
+
+Alem das configurações dos conteuod como um todo, também podemos usar algumas propriedades no proprio item,
+deixando assim uma configuração individual
+
+ORDER - por padrão, os itens são distribuidos no container na ordem em que são inseridos no HTML. No entanto, essa
+ordem porde ser alterada por meio da propriedade order, suja sintaxe vemos
+
+FLEX-GROW - esta propriedade define a proporção com que um item deve crescer caso seja necessário. Por padrão seu 
+valor é 0, o que indica que o item não deve crescer, e são aceitos apenas valores numericos positivos.
+
+FLEX-SHRINK - esta propriedade define a proporção com que um item deve encolher caso sea necessário. Se colocar 0
+significa que ele não deve encolher. 
+
+FLEX-BASIS - define o tamanho inicial que um item deve ter antes que o espaçi ao seu redor seja atribuido. OU seja,
+dependendo da direção do eixo principal (horizontal ou vertical), essa propriedade define a largura ou altura minima 
+do elemento antes que ele seja redimensionado por outras propriedades
+
+FLEX - esta propriedade é uam forma abreviada para a escrita das proprieades flex-grow, flex-SHRINK e basis, nesta
+ordem 
+
+ALIGN-SELF - permite alinhas individualmente o item na vertical. Ela sobrescreve o align-itens
+
+
+
+
+
+
+
+
+
+
+
+
+

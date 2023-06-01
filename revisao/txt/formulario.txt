@@ -78,7 +78,17 @@ para digitação de dados, sendo muito usado para mensagens, comentarios, suget�
 
 SELECT / OPTION
 
-Campo que vai 
+Campo que vai permitir a escolha de uma determinada opção inserida em uma lista acessada por um botão do tipo dorpdown
+Cada item dessa lista deve etar contida em um elemento <option></option>
+
+* Se quisermos organizar as opções pode utilizar o <optgroup></optgroup>
+
+Outros Atributos 
+
+Required - torna um campo de formulario obrigatorio ou seja, seu valor precis ser preenchido
+autofocus - da foco automatico a um determinado campo assim que o navegador carregas a pagina 
+autocomplete - tem as opções on e off, que habilita ou desabiita a sugestão de autocomplemento do navegador
+maxlengh - llimita a quantidade de caracteres em um campo de formulario 
 
 
 
