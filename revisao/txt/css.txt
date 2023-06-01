@@ -196,6 +196,153 @@ A propriedade text-align permite controlar o alinhamento do texto. A propriedade
 
 left: isso indica que o texto ira ser alinhado a esquerda
 right: isso indica que o texto sera alinhado a direita.
+center: o texto ficax no centro
+justify: isso faz com que o texto se alinhe dos dois lados
+
+TEXT - TRANSFORM
+
+É usado para alteraro uso de maiuscula e minusculas no texto.
+Uppercase: isso faz que o texto apareça em maiuscula
+Lowercase: Isso faz com que o texto apareça em minusculo 
+Capitalize: faz com que a primeira letra de cada palavra do texto apareça em maiusculo 
+
+DECORATION  
+
+none: isso remove qualquer decoração ja aplicada no texto 
+underline: adiciona uma linha abaixo do texto 
+onverline: adiciona uma linha acima do texto
+line-throught: add uma linha no meio do texto
+underline overline: cria uma linha acima e outra abaixo
+text-shadow: cria uma sombra nas letras do texto
+
+Line-height: regula o espaço entre as linhas de um Paragrafo
+letter-spacing: define o espaçamento entre as letra do texto
+word-spacing:define o espaçamento entre as palavras no Texto
+text-ident: recua a primeira linha de um objeto de um texto
+
+BOX MODEL
+
+o box model é essencialmente uma caixa que envolver todos os elementos HTML
+-margin
+-border
+-padding
+content
+
+
+Por padrão, uma caixa receber o tamanho exato para acomodar seu conteudo. Podemos fixar estes valores utilizando
+as propriedades widht e height. Para isso podemos fixar os valores em pixels ou percentagem
+
+widht: define a largura do elemento 
+height: define a altura do elemeneto 
+
+Akguns designs de pagina se expandem e se contraem para se adaptar ao tamanho das telas, com estas propriedades 
+podemos limitar estas adaptações dando valores maximos e
+
+min-widhtpara definir o minimo e maximo para largura
+max-height: para definir o max
+
+OVERFLOW
+
+Podemos usar a propriedade overflow para tratar como o conteudo das caixas devem se comportar quando ficam maiores que ela
+overflow: hidden - oculta qualquer conteudo que não caiba na caixa 
+overflow: scroll - adiciona uma barra de rolagem pra rolar o conteudo 
+overflow: auto - se for necessário,a adiciona uma barra de rolagem para rolar o conteudo
+
+Cada caixa tem uma borda (mesmo que ela não estiver visivel ou for especifica para er 0px de largura). A borda contorna
+e determina a caixa. Para visuazlizarmos a borda precisamos definir as tres propriedades principais: largura, estilo e cor
+
+border-widht: define a largura de uma borda. Podemos definir uma largura para todas as borda do elemento ou definir 
+a largura de cada borda 
+
+    p{border-widht: 2px;}
+
+Para definir cada lado usamos:
+border-top-widht (acima) | border-right-widht (direita) | border-bottom-widht (abaixo) | border - left -widht (esquerda)
+
+    p{border-top-widht: 2px; border-right-widht: 1px;
+     border-bottom-widht: 3px; border - left -widht: 4px;}
+
+Border-Style: define o estilo de uma borda. Podemos definir um estilo para todas as bordas do elemento ou definir
+o estilo de cada borda
+
+    p{border-style:solid;}
+
+Para definir cada lado usamos 
+
+Border-color: define a cor de uma borda. Podemos definir uma cor para todas as bordas do elemento ou definir a cor 
+de cada borda 
+
+*É muito comum aplicarmos as tres propriedades de uma só vez, da seguinte forma:
+
+    p{border: 1px solid black;}
+
+A propriedade padding permite especificar quanto será o espaço tera entre o conteudo e a borda do elemento.
+Podemos definir um preenchimento para todos os lados do conteudo ou definir o preenchimento de cada lado. 
+
+    p{padding: 5px;}
+
+A propriedade margin define o espaço entre o elemnto e os demais elementos da pagina 
+Podemos definir o espaço para todos os lados da caixa ou definir o espaço de cada lado 
+
+Para centralizarmos uma caixa podemos utilizar o valor auto para as margens direita e esquerda
+Podemos tambem resumir agrupando top com bottom e rigght com left, 
+
+*Só podemos usar este tipo de resuo quanto quisermos que os valores top com bottom e rigght com left sejam iguais
+
+A propriedade box-shadow permite adicionar uma sombra em torno da caixa 
+A prorpiedade border-radius permite que arredondemos as bordas da caixa
+|| box-sizing permite incluir o preenchimento e a borda na alargura e altura totalde um elemento 
+
+border-content; ´é  valor default, o preenchimento e a borda não fazem parte do tamanho total do elemento
+border-box: o preenchimento e a borda fazem parte do tamanho tota do elemento 
+
+A propriedade posititon define a posição do elemento em relaçao ais demais da pagina. Para configurar podemos usar
+as opções 
+
+static - é o valor default do elemento
+relative - move um elemento em relação ao local onde ele estaria no fluxo 
+absolute - remove o elemento do flluxo normal e ele não mais afeta o fluxo dos demais elementos. Precisa usar as 
+propriedades top, bottom, right, e left para configurar; 
+
+    .bloco{posisiton:fixed; top: 20px; left: 30px;}
+
+Ao usar o posiscionamento relativo, fixo ou absoluto os elementos odem se sobrepor. Assim, com a propriedaed z-index,
+podemos ordenar a sequencia de sobreposição. Por exemplo, um elemento com z-index de 5 ficaa sobre um ou outro com 
+o z-index de 4.
+
+    .bloco{position:fixed;
+            top: 20px;
+            left: 30px;
+            z-index: 4;}
+
+Elementos Flutuantes
+
+A propriedade float permite selecionar um elemento do fluxo nornmal e posiciona-lo o maximo possivel a direita ou a 
+esquerda do elemento container. Ao usar a propriedade float, também temos qiue usar a propriedade widht, pois devemos
+ter um resultado inconsistente
+
+        .bloco{float:left;
+                widht: 50%}
+
+Podemos isolar elementos flutuantes utilizando a propriedade clear, ela determina que nenhum elemento deve flutuar do lado
+do elemento. Temos os valores: left, right, both, e none
+
+        .bloco2{backgorund-color:blue;
+                widht: 50%;
+                clear:both;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

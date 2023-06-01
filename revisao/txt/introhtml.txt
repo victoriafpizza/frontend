@@ -197,74 +197,15 @@ listas não ordenadas.
 
 <ul> 
     <li>
-IMAGENS 
-
-Imagens sãi inseridas pela tag img possui o atributo src que indica o local onde a imagem estã armazenada
-e o atributo alt que ajudara na usabilidade da pagina com pessoas cm algum tipo de deficiencia visual
-
-<img src="local da imagem" alt="atributo">
-
-Se a imagem não for carregada, o navegador exibira o valor inserido d atributo alt
 
 
-LINKS 
 
-Com HTML é possivel fazermos ligações de uma região de texto (ou imagem) a um outro documento, para isso
-utiliamos a tag <a> da seguinte forma:
 
-<a href="arq_destino">ancora</a>
 
-onde:
 
-arq_destino: é o endereço do documento do deseino 
-ancora: é o texto ou imagem que servira de ligação hipertexto do documento sendo apresentado para o documento
-de destinado
 
-texto de link: um texto de lin bem claro pode ajudar os visitantes a encontrar o que querem e dar uma impressão
-mais positiva do site. Para escrever um bom texto de link, oense em palavras que as pessoas podem utilizar na pesquisa
-de destino do links
 
-links para outros sites: quando criamos um link para um site diferente do nosso, o valor do atributo href, sera  
-o endereço web completo para o site , o que é conhecido como URL ABSOLUTO
 
-EX: criar um link para o site da FIAP
-
-<a href="http://www.fiap.com.br">FIAP</a>
-
-LINKS PARA PAGINAS NO MESMO SITE 
-
-Quando criamos um link para outras paginas dentro do mesmo site, não é necessário especificar o nome do 
-dominio, podemos usar um atalho conhecido como URL RELATIVO
-
-Se todas as paginas estiverem na mesma pasta, então o valor do atributo href é apenas o nome da pagina html 
-desejada
-
-<a href="index.htmel">home</a>
-
-Se as paginas estiverem em uma pasta diferente, então deveremos colocar o nome correspondente da pasta no atributo 
-href.
-
-<a href="cursos/javascript.html">JavaScript</a>
-
-ABRINDO LINKS EM ABAS DIFERENTES 
-
-Se vc quer que um link seja aberto em uma nova janela ou aba, utilize o atributo target na tag de 
-abertura com o valor "_blank"
-
-<a href="http://www.fiap.com.br" target="_blank">FIAP</a>
-
-LINK PARA PARTES DA PAGINA 
-
-No topo de uma pagina longa, talvez voce queira adicionar uma lista dos conteudos para as seções correspondentes,
-ou então vc queira adicionar um link na parte inferior da pagina para retornar ao topo. Para isso vc deve:
-
-I - Identificar os pontos de destino da pagina, usando o atributo id. 
-
-        <h1 id="titulo"> Titulo da Pagina </h1>
-
-II - Use a tag <a>, seguindo do elemento href, que deve começar com o simbolo #, e o atributo id 
-
-        <a href="#titulo> Titulo da Pagina </a>
 
 
 
