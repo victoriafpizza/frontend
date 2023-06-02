@@ -1,0 +1,35 @@
+DIV 
+
+A tag div define uma divisão em um doc HTML  e costuma ser usada como um containder para outros elementos, o que 
+ajuda na estilização do bloco. Por esse motivo, a <div> é frequentemente utilizada quando precisamdos agrupas 
+elementos semusar as tags semanticas do HTML. Isso acontece porque a <div> não tem valor sematico. ENtão, não
+signiica nada para os navegadores e mescanismos de pesquisa 
+
+Além do mais, por ser muito masi utilizada para agrupar elementos, acaba facilitando na irganização das informações
+nos layouts. Dessa forma, pode ser formatada e manipulada organicamente via CSS. Geralmente vem compnhado de atributos
+de ID e classe para facilitar essa organização e formatção 
+
+ANCORA
+
+O elemento ancora <a> com o atributo href cria uma hiperligação nas paginas web, através de uma URL que indique o 
+destino do link. A partir disso, imagine q vc criou uma lista de links em sua pagina web e precisa custumiza-lo no 
+css em dois aspectos: retirar o sublinhado e criar um fundo cinza com bordas arredondadas
+
+Border-radius deixa as bordas arredondadas
+
+css borders
+
+a propriedade border é responsavel pelas boras dos elementos HTML. Ao inserir um elemento em um documento HTML,
+há varias possibilidades de estilizar sua borda. Vc ´pde utilizar estilos que a propriedade ja possui, alem de 
+poder também alterar sua cor, espessura e até mesmo seu formato.
+
+GAP 
+
+A propriedade gap não é exclusiva do Flexbox , porem é utilizada quase sempre em conjunto com ele. Ele 
+especifica no CSS o tamanho do espaços entre linhas e colunas em layouts de grid, flex e multi-column. Sua 
+sintaxe é bem simples e ela aceita um ou dois valores
+
+HOVER 
+
+Quando passamos o mouse por cima do explorador lateral do Figma, cada menu perpassado ganha um destaque por 
+meio de uma borda azul 
