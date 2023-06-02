@@ -13,6 +13,17 @@ body{
     color: #88E9BA;
 }
 
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho_menu_link {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: 600;
+    color: antiquewhite;
+    text-decoration: none;
+}
 .titulo-destaque{
     color: #F9B2ED;
 }

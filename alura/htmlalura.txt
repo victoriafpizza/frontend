@@ -33,3 +33,5 @@ HOVER
 
 Quando passamos o mouse por cima do explorador lateral do Figma, cada menu perpassado ganha um destaque por 
 meio de uma borda azul 
+
+MAIN - conteudo principal da pagina 
