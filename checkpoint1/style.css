@@ -24,6 +24,10 @@ header, nav, section, footer {
 
 }
 
+@media (max-width: 768px) {
+    
+}
+
 header img {
     max-width: 100px;
 }
