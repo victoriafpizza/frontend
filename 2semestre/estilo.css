@@ -1,0 +1,54 @@
+.seletor:pseudoclasse{
+    color: black;
+}
+
+/* link */
+
+a:link{
+    color:deeppink;
+}
+
+/* Visited */
+
+a:visited{
+    color: red;
+}
+
+/* Hover */
+
+a:hover{
+    color:green;
+}
+
+/* FOCUS */
+
+a:focus{
+    color:orange;
+}
+
+/* ACTIVE */
+
+a:active{
+    color:aliceblue
+}
+
+/* FIRST CHILD */
+
+.new-list li:first-child{
+    color:blue;
+}
+
+/* LAST CHILD */
+
+.new-list li:last-child{
+    color:blueviolet;
+}
+
+.new-list li:nth-child(even){
+    background-color: aqua;
+}
+
+.new-list li:nth-child(odd){
+    background-color: gray;
+}
+

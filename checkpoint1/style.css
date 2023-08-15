@@ -1,0 +1,67 @@
+/* Cores */
+:root {
+    --cor-fundo: #f4f4f4;
+    --cor-principal: #007bff;
+    --cor-texto: #333;
+}
+
+/* Tamanhos */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos gerais */
+header, nav, section, footer {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--cor-fundo);
+    border: 1px solid #ddd;
+}
+
+header img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+.promo img {
+    max-width: 100%;
+}
+
+.frase-impacto {
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--cor-principal);
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto img {
+    max-width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: var(--cor-texto);
+}
