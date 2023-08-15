@@ -20,6 +20,10 @@ header, nav, section, footer {
     border: 1px solid #ddd;
 }
 
+@media (min-width: 1024px){
+
+}
+
 header img {
     max-width: 100px;
 }
