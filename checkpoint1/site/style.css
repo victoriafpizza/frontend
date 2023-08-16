@@ -1,6 +1,6 @@
 
 :root {
-    --cor-fundo: rgb(5, 116, 153);
+    --cor-fundo: rgb(20, 125, 160);
     --cor-texto: rgb(255, 255, 255);
     --cor-fundoheader: black;
 }
@@ -95,7 +95,7 @@ nav a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     text-align: center;
-    background-color: var(--cor-fundo);
+    background-color: lightblue;
 }
 
 .produto img {
@@ -118,6 +118,7 @@ footer {
     border: 1px solid #ddd;
     box-sizing: content-box;
     box-shadow: 2px 2px 10px gray;
+    background-color: lightblue;
 }
     
 a:hover{
@@ -127,5 +128,8 @@ a:hover{
 .promo{
     background-color: var(--cor-fundo);
     text-align: center;
+    align-items: baseline;
+    box-shadow: 2px 2px 10px gray;
+    color: var(--cor-texto)
+    
 }
-
