@@ -1,8 +1,8 @@
 
 :root {
-    --cor-fundo: lightblue;
-    --cor-principal: blue;
-    --cor-texto: black;
+    --cor-fundo: rgb(5, 116, 153);
+    --cor-texto: rgb(255, 255, 255);
+    --cor-fundoheader: black;
 }
 
 body {
@@ -12,11 +12,20 @@ body {
     font-weight: bold;
 }
 
-header, nav, section, footer {
+nav, section, footer {
     padding: 20px;
     margin-bottom: 20px;
     background-color: var(--cor-fundo);
     border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px gray;
+}
+
+header{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--cor-fundoheader);
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px gray;
 }
 
 /* responsividade */
@@ -27,19 +36,23 @@ header, nav, section, footer {
     }
   }
   
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
     body {
       font-size: 22px;
     }
   }
   
-  @media only screen and (min-width: 1025px) {
+@media  (min-width: 1025px) {
     body {
       font-size: 26px;
     }
   }
 
 /* parte principal do site */
+
+h3{
+    color: var(--cor-texto)
+}
 
 header img {
     max-width: 100px;
@@ -63,14 +76,18 @@ nav a {
 }
 
 .promo img {
-    max-width: 100%;
+    max-width: 200%;
+    color: var(--cor-texto);
     text-align: center;
+    background-color: var(--cor-fundo);
+    border: 2px;
+    box-shadow:10px 10px 20px white;
 }
 
 .frase-impacto {
     text-align: center;
     font-size: 1.2em;
-    color: var(--cor-principal);
+    color: var(--cor-texto);   
 }
 
 .galeria {
@@ -78,6 +95,7 @@ nav a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     text-align: center;
+    background-color: var(--cor-fundo);
 }
 
 .produto img {
@@ -90,15 +108,24 @@ footer {
     align-items: center;
     font-size: 0.9em;
     color: var(--cor-texto);
+    box-shadow: 2px 2px 10px gray;
 }
 
 .produto {
     padding: 20px;
     margin-bottom: 20px;
-    background-color: var(--cor-fundo);
+    text-align: center;
     border: 1px solid #ddd;
-    box-sizing: border-box;
+    box-sizing: content-box;
+    box-shadow: 2px 2px 10px gray;
 }
     
+a:hover{
+    color:lightblue
+}
 
+.promo{
+    background-color: var(--cor-fundo);
+    text-align: center;
+}
 

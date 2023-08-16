@@ -4,8 +4,7 @@ Para esta tarefa voces deverao criar a pagina inicial de uma loja se Smartphones
 
 Semantica: A pagina deve ser estruturada com elementos semanticos 
 
-Conteudos: A pagina deve conter: cobeçalho com logo e titulo; menu com no minimo 4 links para demais paginas; propaganda principa em destaque 
-uma frase de impacto sobre a loja, galeria de produtos (mais de 10) rodape com informações e contatos 
+Conteudos: A pagina deve conter: cobeçalho com logo e titulo; menu com no minimo 4 links para demais paginas; propaganda principa em destaque, uma frase de impacto sobre a loja, galeria de produtos (mais de 10) rodape com informações e contatos 
 
 Responsividade: A pagina deve ser estrutura nos 3 pilares de responsividade e se adaptar para os devices: Notebook, Tablet, e Smartphone
 
