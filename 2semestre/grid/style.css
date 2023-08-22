@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: 150px;
+    gap: 5px;
+    grid-template-areas: 
+    "header     header      header       header      header"
+    "main        main        main       aside       aside"    
+    "main        main        main       aside       aside"
+    "article1  article1   article1     article1    article1"
+    "footer     footer     footer       footer      footer"
+    ;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+}
+
+.article1{
+    grid-area: article1;
+}
+
+.article2{
+    grid-area: article2;
+}
+
+footer{
+    grid-area: footer;
+}
