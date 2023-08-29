@@ -1,0 +1,10 @@
+div h1 {
+  color: royalblue;
+  background-color: lightblue;
+}
+div p {
+  color: darkblue;
+}
+div:hoover {
+  border: 5px solid 0;
+}/*# sourceMappingURL=main.css.map */

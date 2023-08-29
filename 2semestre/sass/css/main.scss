@@ -1,0 +1,19 @@
+$text-color: darkblue;
+$p-color: lightpurple;
+
+div{
+    
+    h1{
+        color:royalblue;
+        $bg-color: lightblue;
+        background-color: lightblue;
+    }
+    
+    p{
+        color: $text-color;
+    }
+
+    &:hoover{
+        border:5px solid blue($color: #000000)
+    }
+}
