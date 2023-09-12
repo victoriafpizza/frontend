@@ -1,3 +1,41 @@
+@import './variaveis';
+// o importa chama o arquivo onde as variaveis estão
+
+
+@each $key, $cor in $color{
+    .text-#{key}{
+        color: $cor;
+    }
+}
+
+@mixin btn($tamanho, $bg-color, $text-color){
+    @if $tamanho == peq{
+        font-size: 12px;
+        border-radius:8px;
+    }@else if $tamanho == med {
+        font-size: 18px;
+        border-radius:12px;
+    }@else if $tamanho == gde {
+        font-size: 24px;
+        border-radius: 16px;
+    }
+
+
+    font-size: $tamanho;
+    background-color: $bg-color;
+    color:$text-color;
+    padding:10px 15px;
+}
+// no mixing ta toda a formtação do botão. 
+// com o mixing é só colocar a formatação
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// serve para ocloar os conteudos.
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +43,48 @@
     font-family: Arial, Helvetica, sans-serif; 
 }
 
-h1 {
-    color: blue;
+header{
+    background-color: lightblue;
+    @extend %flex-center;
+    flex-direction: columnm;
+
+
+    &:hoover{
+        background-color: green($color: #000000);
+    }
+    h1{
+        color: $title-color;
+    }
+
+    p{
+        color:darkblue
+    }
+
+    @media screen and (max-width:768px){
+        background-color: coral;
+
+    }
 }
+// da pra colocar o media aqui também. um bloco dentro do header
+
+button{
+    @include btn(peq, yellow, black)
+}
+
+// focar na concatenação.
+@for $x from 1 through 5{
+    .text-#{$x}{
+        font-size:8px * $x;
+    }
+}
+// o for serve para colocar nas classes de identificação com variaveis. 
+// se usar o "to" o ultimo elemento fica de fora, mas se colocar um item a amis, todos els são colocados. 
+
+// o sass facilita a formatação no react
+// o css não entende um elemento dentro do outro
+// podemos intercalar os seletores
+// podemos colocar complementos, ou seja, partiiconar. 
+// quando usamos uma função que tem mais de uma propriedade, precisa ser separada por virgula
+// o sass tem um maior poder de organização
+
+
