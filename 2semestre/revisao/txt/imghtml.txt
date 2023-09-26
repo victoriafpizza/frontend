@@ -1,8 +1,0 @@
-IMAGENS 
-
-Imagens sãi inseridas pela tag img possui o atributo src que indica o local onde a imagem estã armazenada
-e o atributo alt que ajudara na usabilidade da pagina com pessoas cm algum tipo de deficiencia visual
-
-<img src="local da imagem" alt="atributo">
-
-Se a imagem não for carregada, o navegador exibira o valor inserido d atributo alt
